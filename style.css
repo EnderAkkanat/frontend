@@ -1,0 +1,244 @@
+body {
+    background: linear-gradient(240deg, #9CD8D8 50%, #FBA29B 50%);
+    margin: 0;
+
+}
+
+#index {
+    width: 40em;
+
+
+}
+
+img.acc {
+    width: 30%;
+    border-radius: 50%;
+    width: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+}
+
+.demo {
+    max-width: 50px;
+}
+
+
+nav {
+    background: linear-gradient(110deg, #70B9B9 60%, #DE5045 60%);
+    /*Bron: https://blog.prototypr.io/css-only-multi-color-backgrounds-4d96a5569a20 door KEdar.*/
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #F39F9F;
+    color: green;
+    transition: 1s;
+
+}
+
+nav a:active {
+    color: red;
+}
+
+
+button {
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+    background-color: #0069ed;
+    padding: 5px;
+}
+
+button:hover {
+    transition: 0.4s;
+    color: #FFFFFF;
+    background-color: #0053ba;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+article a:hover {
+    background-color: #F39F9F;
+    color: green;
+    transition: all 1s ease;
+    box-shadow: 20px;
+    font-size: 20px;
+}
+
+
+img {
+
+    margin: 0;
+    padding: 0;
+    min-width: 50px;
+}
+
+article {
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: #16E677;
+    padding: 10px;
+    margin: 40px;
+    text-align: center;
+    transition: transform ease-in-out 0.3s;
+}
+
+article:hover {
+    transform: scale(1.1);
+
+}
+
+article a:hover {
+    background-color: #F39F9F;
+    color: green;
+    transition: all 1s ease;
+    box-shadow: 20px;
+    font-size: 20px;
+}
+
+article img {
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #F39F9F;
+    padding: 2em;
+}
+
+/*ipad formaat*/
+@media only screen and (max-width: 768px) {
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .nav-web {
+        display: none;
+    }
+
+    /*https://codepen.io/andornagy/pen/xhiJH door Andor Nagy*/
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        width: 15%;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    img.acc {
+        width: 30%;
+        border-radius: 50%;
+        width: 30px;
+
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /*iphone formaat*/
+    @media only screen and (max-width: 400px) {
+        .nav-mobile {
+            display: flex;
+        }
+
+        .nav-web {
+            display: none;
+        }
+
+        /*https://codepen.io/andornagy/pen/xhiJH door Andor Nagy*/
+
+        nav ul {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 10px;
+            display: flex;
+            flex-direction: ;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul:hover {
+            background-color: black;
+        }
+
+        section {
+            grid-template-columns: 1fr;
+
+        }
+
+        article {
+            padding: 5px;
+            margin: 40px;
+        }
+
+        img.acc {
+            width: 15%;
+            border-radius: 50%;
+            width: 30px;
+        }
